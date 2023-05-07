@@ -5,6 +5,8 @@ Consider the commands less, find, and grep. Choose one of them. Online, find 4 i
 
 In this case I choose ```grep``` command line for searching to finish the labreport. I ask ChatGPT to privide interesting "grep" command lines. Let's see what interesting command lines I got!
 
+------------------------------------------------------------------------------------
+
 > **grep -r "Specific string":** **Find all files containing a specific string**
 
 For example, when I type grep -r "adults". The terminal will find all the files that have the string "adults". Below is the picture of it.
@@ -15,6 +17,8 @@ Another example, when I trype grep -r "rescue". The terminal will find all the f
 
 <img width="962" alt="截圖 2023-05-07 15 41 12" src="https://user-images.githubusercontent.com/130111605/236706027-735668e8-54e0-4467-881b-848855141890.png">
 
+------------------------------------------------------------------------------------
+
 > **grep -i "Specific string" fileName.txt:** **Find the specific string and display whole the sentence that includes this string.**
 
 For example, after I use cd to go inside the technical directory and use cd to go inside biomed directory, I type grep -i "adults" rr37.txt. It turns out as below:
@@ -24,6 +28,8 @@ For example, after I use cd to go inside the technical directory and use cd to g
 Another example, after I use cd to go inside the technical directory and use cd to go inside 911report directory, I type grep -i "find" chapter-13.3.txt. It turns out as below:
 
 <img width="804" alt="截圖 2023-05-07 16 09 42" src="https://user-images.githubusercontent.com/130111605/236707118-5524817f-77b3-48e1-a137-d932f63ab637.png">
+
+------------------------------------------------------------------------------------
 
 > **What if we do not want the specific words that is also included inside the other words but still counts by the terminal?**
 
@@ -38,7 +44,9 @@ Another example: grep -i -w "by" ONTARIO_LEGAL_AID_SERIES.txt
 
 <img width="704" alt="截圖 2023-05-07 16 30 07" src="https://user-images.githubusercontent.com/130111605/236707902-91acfb5a-24b9-43be-89df-8a0722c9d1ff.png">
 
-> The last interesting ```grep``` command line I want to share is grep -i -v [string] [filename].
+------------------------------------------------------------------------------------
+
+> **The last interesting ```grep``` command line I want to share is grep -i -v [string] [filename].**
 If the user want to find the sentences that are not include the specific string, this command line can reverse to find out all the conditional matching sentences.
 
 For example, **grep -i -v "in" journal.pbio.0020001.txt**
